@@ -7,7 +7,7 @@
   if(isset($_POST['submit'])) {
     $fname = trim($_POST['fname']);
     $username = trim($_POST['username']);
-    $password = trim($_POST['password']);
+    $password = 'password'; //changed this to be the manual password
     $email = trim($_POST['email']);
     $userlvl = $_POST['userlvl'];
     if(empty($userlvl)){
@@ -32,8 +32,8 @@
     <input type="text" name="fname" value="<?php if(!empty($fname)){echo $fname;} ?>">
     <label>Username:</label>
     <input type="text" name="username" value="<?php if(!empty($username)){echo $username;} ?>">
-    <label>Password</label>
-    <input type="text" name="password" value="<?php if(!empty($password)){echo $password;} ?>">
+    <!-- <label>Password</label>
+    <input type="text" name="password" value="<?php if(!empty($password)){echo $password;} ?>"> Taking this out so new user can't make a password and is given it via email instead-->
     <label>Email:</label>
     <input type="text" name="email" value="<?php if(!empty($email)){echo $email;} ?>">
     <label>User Level:</label>
