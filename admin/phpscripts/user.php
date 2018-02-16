@@ -6,7 +6,11 @@
 
     $userQuery = mysqli_query($link, $userString);
       if($userQuery) {
-        redirect_to("admin_index.php");
+        echo "Here is your username, password and url!\n";
+        echo "username: {$username}\n";
+        echo "password: {$password}\n";
+        echo "url: http://localhost/create_user/admin/admin_login.php\n";
+        //redirect_to("admin_index.php");
       }else{
         $message = "There was a problem with setting up this user. Maybe reconsider your hiring practices.";
         return $message;
