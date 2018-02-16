@@ -1,8 +1,9 @@
 <?php
   //ini_set('display_errors',1);
   //error_reporting(E_ALL);
-	require_once('phpscripts/config.php');
+  require_once('phpscripts/config.php');
 	confirm_logged_in();
+  
   if(isset($_POST['submit'])) {
     $fname = trim($_POST['fname']);
     $username = trim($_POST['username']);

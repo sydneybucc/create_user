@@ -1,7 +1,7 @@
 <?php
   function createUser($fname, $username, $password, $email, $userlvl) {
     include('connect.php');
-    $userString = "INSERT INTO tbl_user VALUES(NULL, '{$fname}', '{$username}', '{$password}', '{$email}', NULL, '{$userlvl}', 'no')";
+    $userString = "INSERT INTO tbl_user VALUES(NULL, '{$fname}', '{$username}', '{$password}', '{$email}', DEFAULT, '{$userlvl}', 'no')";
     //echo $userString;
 
     $userQuery = mysqli_query($link, $userString);
