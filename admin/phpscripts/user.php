@@ -7,9 +7,9 @@
     $userQuery = mysqli_query($link, $userString);
       if($userQuery) {
          
+        //This is the email that is sent to the user trying to create an account. This is how they will recieve their system generated password to login.
         $to = $email;
-        $subject = "Here is your username, password, and url!";
-        //$extra[] = "Reply to: ".$email;
+        $subject = "Here is your username, password, and url to the login page!";
         $msg = "Username: ".$username."\n\nPassword: ".$password."\n\nURL: url: http://localhost/create_user/admin/admin_login.php";
         mail($to, $subject, $msg);
         //$direct = $direct."?name={$name}";
