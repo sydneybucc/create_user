@@ -6,12 +6,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome to your admin panel</title>
+<title>Admin Panel</title>
 </head>
 <body>
-	<h1>Welcome to your admin page</h1>
+	<h1>Welcome To Your Admin Page, Boss!</h1>
 	<?php
-	echo "<h2>Hi--{$_SESSION["user_name"]}</h2>";
+	echo "<h2>Hello {$_SESSION["user_name"]}</h2>";
 	?>
 	<a href="admin_createuser.php">Create User</a>
 	<a href="phpscripts/caller.php?caller_id=logout">Sign Out</a>
