@@ -2,7 +2,7 @@
   //ini_set('display_errors',1);
   //error_reporting(E_ALL);
   require_once('phpscripts/config.php');
-  <script type="text/javascript" src="../admin_main.js"></script>
+  //<script type="text/javascript" src="../admin_main.js"></script>
 	confirm_logged_in();
   
   if(isset($_POST['submit'])) {
