@@ -2,12 +2,13 @@
   //ini_set('display_errors',1);
   //error_reporting(E_ALL);
   require_once('phpscripts/config.php');
+  <script type="text/javascript" src="../admin_main.js"></script>
 	confirm_logged_in();
   
   if(isset($_POST['submit'])) {
     $fname = trim($_POST['fname']);
     $username = trim($_POST['username']);
-    $password = 'password'; //changed this to be the manual password
+    $password = random_password(16); //changed this to be the manual password
     $email = trim($_POST['email']);
     $userlvl = $_POST['userlvl'];
     if(empty($userlvl)){
@@ -17,6 +18,13 @@
       $message = $result;
     }
   }
+
+  //found from https://hugh.blog/2012/04/23/simple-way-to-generate-a-random-password-in-php/
+  function random_password( $length = 8 ) {
+    $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-=+;:,.?";
+    $password = substr( str_shuffle( $chars ), 0, $length );
+    return $password;
+}
 ?>
 <!doctype html>
 <html>
