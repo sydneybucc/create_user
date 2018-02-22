@@ -10,14 +10,15 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link rel="stylesheet" href="css/foundation.css">
 <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
-<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/admin_main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-	<h1>Welcome To Your Admin Page, Boss!</h1>
-	<?php
-	echo "<h2>Hello {$_SESSION["user_name"]}</h2>";
-	?>
-	<a href="admin_createuser.php">Create User</a>
-	<a href="phpscripts/caller.php?caller_id=logout">Sign Out</a>
+<div class="expanded row">
+	<h1 class="php_h1">Welcome To Your Admin Page, Boss!</h1>
+</div>
+<ul class="expanded row index_list">
+	<li><a href="admin_createuser.php">Create User</a></li>
+	<li><a href="phpscripts/caller.php?caller_id=logout">Sign Out</a></li>
+</ul>
 </body>
 </html>

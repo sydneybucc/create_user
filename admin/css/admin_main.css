@@ -1,3 +1,7 @@
+.hidden {
+	display: none;
+}
+
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	letter-spacing: 2px;
@@ -29,19 +33,17 @@ h2 {
 	max-width: 85%;
 }
 
+h3 {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #5B7D87;
+	letter-spacing: 3.5px;
+	font-size: 20px;
+	padding: 30px 0 10px 0;
+	text-align: center;
+}
+
 /*Login Page*/
-
-#contactArea {
-	background-color: #2E323C;
-}
-
-#contactArea h2 {
-	color: #5B7D87 !important;
-}
-
-#contactArea h3 {
-	color: #91B3BC !important;
-}
 
 #contactForm {
 	margin-top: 100px;
@@ -79,4 +81,33 @@ h2 {
 	background-color: #FC6C6C;
 	cursor: pointer;
 	transition: all 1s linear;
+}
+
+/*admin_index.php*/
+
+.php_h1 {
+	margin-top: 40px;
+}
+
+.index_list {
+	margin-top: 150px;
+}
+
+/*admin_createuser.php*/
+
+.createUserArea {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#username {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	color: #3E3E3B;
+	padding: 25px 0px 25px 15px;
+}
+
+#password {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	color: #3E3E3B;
+	padding: 25px 0px 25px 15px;
 }

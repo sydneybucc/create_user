@@ -31,27 +31,37 @@
 <head>
 <meta charset="UTF-8">
 <title>CMS Portal</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="css/foundation.css">
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/admin_main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-	<h1>Welcome to your admin page</h1>
+<div class="expanded row">
+  <h1 class="hidden">Welcome to your admin page</h1>
+  <h2>Create a new user below</h2>
+</div>
   <?php if(!empty($message)){echo $message;} ?>
-  <form action="admin_createuser.php" method="post">
-    <label>First Name:</label>
-    <input type="text" name="fname" value="<?php if(!empty($fname)){echo $fname;} ?>">
-    <label>Username:</label>
-    <input type="text" name="username" value="<?php if(!empty($username)){echo $username;} ?>">
+  
+<div class="expanded row createUserArea">
+  <form class="small-8 small-offset-2 large-8 large-offset-2" action="admin_createuser.php" method="post">
+    <label class="hidden">First Name:</label>
+    <input type="text" name="fname" value="<?php if(!empty($fname)){echo $fname;} ?>" placeholder="First Name:">
+    <label class="hidden">Username:</label>
+    <input type="text" name="username" value="<?php if(!empty($username)){echo $username;} ?>" placeholder="Username:">
     <!-- <label>Password</label>
     <input type="text" name="password" value="<?php if(!empty($password)){echo $password;} ?>"> Taking this out so new user can't make a password and is given it via email instead-->
-    <label>Email:</label>
-    <input type="text" name="email" value="<?php if(!empty($email)){echo $email;} ?>">
-    <label>User Level:</label>
-    <select name="userlvl">
+    <label class="hidden">Email:</label>
+    <input type="text" name="email" value="<?php if(!empty($email)){echo $email;} ?>" placeholder="Email:">
+    <label class="hidden">User Level:</label>
+    <select name="userlvl" placeholder="Select User Level:">
       <option value="">Please select a user level</option>
       <option value="2">Web Admin</option>
       <option value="1">Web Master</option>
     </select>
-    <input type="submit" name="submit" value="Create User">
+    <input id="submit" type="submit" name="submit" value="Create User">
   </form>
+</div>
 
 </body>
 </html>
