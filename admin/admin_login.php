@@ -19,21 +19,25 @@
 <head>
 <meta charset="UTF-8">
 <title>Welcome to your admin panel login</title>
-<link rel="stylesheet" href="css/admin_main.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="css/foundation.css">
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
 
 <div class="expanded row">
 	<h2>LOGIN</h2>
+	<h3>Sign in to view your portal</h3>
 </div>
 	<?php if(!empty($message)){ echo $message;} ?>
 <div class="expanded row" id="contactArea">
 	<form id="contactForm" class="small-8 small-offset-2 large-8 large-offset-2" action="admin_login.php" method="post">
 		<label>Username:</label>
-		<input type="text" required id="username" name="username" size="30" value="">
+		<input type="text" required id="username" name="userName" value="">
 		<br>
-		<label>Password</label>
-		<input type="text" required id="password" name="password" size="30" value="">
+		<label>Password:</label>
+		<input type="text" required id="password" name="passWord" value="">
 		<br><br>
 		<input id="submit" type="submit" name="submit" value="Show me the money">
 	</form>

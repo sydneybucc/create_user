@@ -7,7 +7,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Admin Panel</title>
-<link rel="stylesheet" href="css/admin_main.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="css/foundation.css">
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
 	<h1>Welcome To Your Admin Page, Boss!</h1>

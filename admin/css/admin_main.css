@@ -35,9 +35,17 @@ h2 {
 	background-color: #2E323C;
 }
 
+#contactArea h2 {
+	color: #5B7D87 !important;
+}
+
+#contactArea h3 {
+	color: #91B3BC !important;
+}
+
 #contactForm {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 #username {
