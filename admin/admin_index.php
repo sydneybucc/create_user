@@ -7,6 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Admin Panel</title>
+<link rel="stylesheet" href="css/admin_main.css">
 </head>
 <body>
 	<h1>Welcome To Your Admin Page, Boss!</h1>
