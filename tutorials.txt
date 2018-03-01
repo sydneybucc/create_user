@@ -1,0 +1,17 @@
+https://stackoverflow.com/questions/17797211/how-to-encrypt-a-password-that-is-inserted-into-a-mysql-table/17797281#17797281
+
+https://hugh.blog/2012/04/23/simple-way-to-generate-a-random-password-in-php/
+
+https://stackoverflow.com/questions/6101956/generating-a-random-password-in-php
+
+https://www.npmjs.com/package/bcryptjs
+
+https://www.youtube.com/watch?v=1ZeDy2QI3OE
+
+
+
+
+Login Info - 
+
+username: sydney
+password: hello
